@@ -8,10 +8,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Homepage</a>
-            <a href="about.html" class="nav-item nav-link">About Us</a>
-            <a href="service.html" class="nav-item nav-link">Our Services</a>
-           
+            <a href="/" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Homepage</a>
+            <a href="/about-us" class="nav-item nav-link {{ Request::is('about-us') ? 'active' : '' }}">About Us</a>
+            <a href="/our-services" class="nav-item nav-link {{ Request::is('our-services') ? 'active' : '' }}">Our
+                Services</a>
+
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu m-0">
@@ -20,7 +21,8 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
-        <a href="" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Contact Us</a>
+        <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                class="fa fa-search"></i></button>
+        <a href="/contact-us" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3 {{ Request::is('contact-us') ? 'active' : '' }}">Contact Us</a>
     </div>
 </nav>

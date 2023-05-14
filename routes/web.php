@@ -22,3 +22,15 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/about-us', function () {
+    return view('pages.aboutus');
+});
+
+Route::get('/our-services', function () {
+    return view('pages.ourservices');
+});
+
+Route::get('/contact-us', function () {
+    return view('pages.contactus');
+});
+
