@@ -1,6 +1,14 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\OurServicesController;
+
+// admin namespace
+use App\Http\Controllers\Admin\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,24 +21,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
+Auth::routes();
 
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/about-us', function () {
-    return view('pages.aboutus');
-});
+// pages route
+Route::get('/about-us', [AboutUsController::class, 'index']);
 
-Route::get('/our-services', function () {
-    return view('pages.ourservices');
-});
+Route::get('/our-services', [OurServicesController::class, 'index']);
 
-Route::get('/contact-us', function () {
-    return view('pages.contactus');
-});
+Route::get('/contact-us', [ContactUsController::class, 'index']);
 
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// admin route
+
+Route::prefix('/admin')->group(
+    function () {
+        Route::get('dashboard', [DashboardController::class, 'index']);
+    }
+);
