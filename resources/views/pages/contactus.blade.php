@@ -26,41 +26,49 @@
 </div>
         
         @include('components.search')
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">About Us</h6>
-                            <h2 class="mt-2">The best SEO solution with 10 years of experience</h2>
+        <!-- Service Start -->
+    <div class="container-xxl py-5 bg-white">
+        <div class="container px-lg-5">
+            <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="position-relative d-inline text-primary ps-4">Contact Us</h6>
+                <h2 class="mt-2">Bagaimana cara memesan atau mengajukan penawaran ?</h2>
+                <h4 class="mt-2">Hubungi kontak yang tersedia untuk mulai memesan dan mengajukan penawaran</h4>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class="fa-brands fa-whatsapp fa-2x"></i>
                         </div>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                        <h5 class="mb-3">Via Whatsapp</h5>
+                        <p>Hubungi secara langsung dan praktis ke Whatsapp Kami.</p>
+                        <a class="btn px-3 mt-auto mx-auto" href="">Kirim Pesan</a>
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class="fa-solid fa-envelope fa-2x"></i>
+                        </div>
+                        <h5 class="mb-3">Via Email</h5>
+                        <p>Ingin kontak yang lebih profesional ? Kami menyediakan kontak E-mail.</p>
+                        <a class="btn px-3 mt-auto mx-auto" href="https://mail.google.com/mail/?view=cm&fs=1&to=zerolabs911@gmail.com" target="_blank">Kirim Email</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <i class="fa-sharp fa-solid fa-headset fa-2x"></i>
+                        </div>
+                        <h5 class="mb-3">Via Livechat</h5>
+                        <p>Mau melakukan penawaran secara langsung ? Kami menyediakan fitur livechat online 24jam.</p>
+                        <a class="btn px-3 mt-auto mx-auto" href="">Chat Sekarang</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+    </div>
+    <!-- Service End -->
 
 
         @include('components.footer')

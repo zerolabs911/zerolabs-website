@@ -40,7 +40,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // admin route
 
-Route::prefix('/admin')->group(
+Route::prefix('/admin')->middleware(['auth', 'isAdmin'])->group(
     function () {
         Route::get('dashboard', [DashboardController::class, 'index']);
     }

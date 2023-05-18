@@ -11,8 +11,7 @@
     </button>
     <ul class="navbar-nav navbar-nav-left header-links">
       <li class="nav-item d-none d-xl-flex">
-        <a href="#" class="nav-link">Schedule <span class="badge badge-primary ml-1">New</span>
-        </a>
+        <a href="#" class="nav-link">Pesanan</a>
       </li>
       <li class="nav-item active d-none d-lg-flex">
         <a href="#" class="nav-link">

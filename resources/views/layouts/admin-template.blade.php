@@ -14,6 +14,7 @@
   <!-- plugin css -->
   <link rel="stylesheet" href="{{ asset('assets/plugins/@mdi/font/css/materialdesignicons.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.css') }}">
+  <script src="https://kit.fontawesome.com/1344c70d7a.js" crossorigin="anonymous"></script>
   
   <!-- end plugin css -->
 
